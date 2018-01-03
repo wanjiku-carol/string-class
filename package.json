@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/wanjiku-carol/string-class/issues"
   },
-  "homepage": "https://github.com/wanjiku-carol/string-class#readme"
+  "homepage": "https://github.com/wanjiku-carol/string-class#readme",
+  "dependencies": {
+    "jasmine": "^2.8.0"
+  }
 }
