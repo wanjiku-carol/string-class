@@ -1,0 +1,22 @@
+{
+  "name": "stringclass",
+  "version": "1.0.0",
+  "description": "Strinc class that has different methods applicable to a string",
+  "main": "stringclass.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wanjiku-carol/string-class.git"
+  },
+  "author": "Caroline",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wanjiku-carol/string-class/issues"
+  },
+  "homepage": "https://github.com/wanjiku-carol/string-class#readme"
+}
