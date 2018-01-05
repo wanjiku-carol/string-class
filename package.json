@@ -7,7 +7,8 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "jasmine tests/tests_stringclass.js"
+    "test": "babel-node spec/stringclass.spec.js",
+    "webpack": "webpack"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,8 @@
   },
   "homepage": "https://github.com/wanjiku-carol/string-class#readme",
   "dependencies": {
+    "babel": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
     "jasmine": "^2.8.0"
   },
   "devDependencies": {
@@ -27,6 +30,8 @@
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
     "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.26.0",
     "webpack": "^3.10.0"
   }
 }
