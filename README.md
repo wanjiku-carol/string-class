@@ -16,4 +16,4 @@ Install app dependencies
 > npm install
 
 Run the tests
-> jasmine tests/tests_stringclass.js
+> npm test
