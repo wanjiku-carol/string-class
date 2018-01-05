@@ -1,3 +1,4 @@
 /src/stringclass.sample.js
 spec
 node_modules
+npm-debug.log*

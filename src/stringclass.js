@@ -1,5 +1,7 @@
 export class stringClass{
-    constructor(){}
+    constructor(name){
+        this.name = name;
+    }
 
     hasVowels(){}
 
