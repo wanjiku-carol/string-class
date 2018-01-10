@@ -3,12 +3,14 @@ export class stringClass{
         this.name = name;
     }
     wordCheck(){
+        /*Check if the string is empty */
         if(!this.name){
             return "There must be a string";
         }
     }
 
     hasVowels(){
+        /*Checks if the string contains vowels*/
         let vowels = ['a','e','i','o','u'];
         let nameSplit = this.name.split("");
         for(let i=0; i<vowels.length; i++){
@@ -20,6 +22,7 @@ export class stringClass{
     }
 
     toUpper(inputString){
+        /*Converts a string to uppercase */
         this.inputString = inputString;
         let newString = [];
         for(let word of this.inputString.split(" ")){
@@ -37,6 +40,7 @@ export class stringClass{
     }
 
     toLower() {
+        /*Converts a string to lowercase */
         let newString = [];
         for(let word of this.name.split(" ")){
             let resultVar = "";
@@ -58,12 +62,14 @@ export class stringClass{
     }
 
     ucFirst(){
+        /*Converts the first letter of a string to uppercase*/
         let splitName = this.name.charAt(0);
 
         return (this.toUpper(splitName)+ this.name.substr(1) + "?");
     }
 
     isQuestion(){
+        /*Checks if string is a question */
         if(this.name.includes("?")){
             return true;
         } else{
@@ -72,6 +78,7 @@ export class stringClass{
     }
 
     in(){
+        /*Returns a list of the words in the string, as an array */
         if(this.name instanceof Array){
             return "This is already an array";
         } else{
@@ -85,10 +92,12 @@ export class stringClass{
     }
 
     wordCount(){
+        /*Returns the number of words in the string */
         return this.name.split(" ").length;
     }
     
     toCurrency(){
+        /*Returns a currency representation of the String */
         let currencyString = Number(this.name);
         if(typeof currencyString === "number" && !isNaN(currencyString)){
             return currencyString.toLocaleString();
@@ -98,6 +107,7 @@ export class stringClass{
     }
 
     fromCurrency(){
+        /*Returns a number representation of the Currency String */
         let currencyString = this.name.replace(/\,/g,'');
         if(!isNaN(Number(currencyString))){
             return currencyString;
@@ -107,6 +117,7 @@ export class stringClass{
     }
 
     inverseCase(){
+        /*Returns each letter in the string as an inverse of its current case */
         let regexpUpper = /^[A-Z]/;
         let splitString = this.name.split("");
         let inverseString = splitString.map(function(word){
@@ -122,6 +133,7 @@ export class stringClass{
     }
 
     alternatingCase(){
+        /*Returns the letters in alternating cases */
         let words = this.name.toLowerCase().split("");
         for (let index = 0; index < words.length; index += 2) {
             words[index] = words[index].toUpperCase();
@@ -130,6 +142,7 @@ export class stringClass{
     }
 
     getMiddle(){
+        /*Returns the character(s) in the middle of the string */
         let position;
         let length;
         if(this.name.length % 2 === 1) {
@@ -144,6 +157,7 @@ export class stringClass{
     }
 
     numberWords(){
+        /*Returns the numbers in words */
         let numbers = {0: "and",1:"one",2:"two",3:"three",4:"four",
         5:"five",6:"six",7:"seven",8:"eight",9:"nine"};
         let splitNumber = this.name.toLocaleString().split(",");
@@ -164,6 +178,7 @@ export class stringClass{
     }
 
     isDigit(){
+        /*Returns true if the string is a digit */
         let splitName = this.name.split("");
         if(splitName.length>1){
             return false;
@@ -181,6 +196,7 @@ export class stringClass{
     }
 
     doubleCheck(){
+        /*Checks for double characters in strings */
         if((this.name.match(/[^\w\s]|(.)(?=\1)/gi, "")) !== null){
             return true;
         }

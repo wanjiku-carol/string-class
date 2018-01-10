@@ -5,8 +5,8 @@ import { stringClass } from '../src/index';
 let jasmine = new Jasmine();
 jasmine.loadConfigFile('spec/support/jasmine.json');
 
-describe('There must be a string input', function(){
-    it('returns message if no vowel found', function(){
+describe('Check if the string is empty', function(){
+    it('returns message string is empty', function(){
         const noName = new stringClass("");
         expect(noName.wordCheck()).toEqual("There must be a string");
     });
