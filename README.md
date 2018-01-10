@@ -1,6 +1,4 @@
-[![Build Status](https://travis-ci.org/wanjiku-carol/string-class.svg?branch=master)](https://travis-ci.org/wanjiku-carol/string-class)
-
-[![Coverage Status](https://coveralls.io/repos/github/wanjiku-carol/string-class/badge.svg?branch=master)](https://coveralls.io/github/wanjiku-carol/string-class?branch=master)
+[![Build Status](https://travis-ci.org/wanjiku-carol/string-class.svg?branch=master)](https://travis-ci.org/wanjiku-carol/string-class)[![Coverage Status](https://coveralls.io/repos/github/wanjiku-carol/string-class/badge.svg?branch=master)](https://coveralls.io/github/wanjiku-carol/string-class?branch=master)
 
 ## String Class
 
