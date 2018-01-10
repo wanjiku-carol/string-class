@@ -21,11 +21,11 @@
   },
   "homepage": "https://github.com/wanjiku-carol/string-class#readme",
   "dependencies": {
-    "babel": "^6.23.0",
     "babel-polyfill": "^6.26.0",
     "jasmine": "^2.8.0"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
