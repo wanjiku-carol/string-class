@@ -1,8 +1,8 @@
 var path = require('path');
- var webpack = require('webpack');
+var webpack = require('webpack');
      
  module.exports = {
-     entry: './src/stringclass.js',
+     entry: './app.js',
      output: {
          path: path.resolve(__dirname, 'build'),
          filename: 'app.bundle.js'
