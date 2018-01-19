@@ -974,29 +974,26 @@ var Result = exports.Result = function (_React$Component) {
     }
 
     _createClass(Result, [{
-        key: "render",
+        key: 'render',
         value: function render() {
+            console.log('props: ', this.props);
             return _react2.default.createElement(
-                "div",
-                { className: "textarea-div" },
+                'div',
+                { className: 'textarea-div' },
                 _react2.default.createElement(
-                    "div",
+                    'div',
                     null,
                     _react2.default.createElement(
-                        "p",
+                        'p',
                         null,
                         _react2.default.createElement(
-                            "b",
+                            'b',
                             null,
-                            "Result:"
+                            'Result:'
                         )
                     )
                 ),
-                _react2.default.createElement(
-                    "textarea",
-                    { className: "text-area", rows: "10" },
-                    this.props.children
-                )
+                _react2.default.createElement('textarea', { className: 'text-area', rows: '10', value: this.props.value })
             );
         }
     }]);
@@ -8103,7 +8100,11 @@ var _react2 = _interopRequireDefault(_react);
 
 var _stringclass = __webpack_require__(31);
 
+var stringMethods = _interopRequireWildcard(_stringclass);
+
 var _Result = __webpack_require__(14);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -8121,19 +8122,10 @@ var Methods = exports.Methods = function (_React$Component) {
 
         var _this = _possibleConstructorReturn(this, (Methods.__proto__ || Object.getPrototypeOf(Methods)).call(this, props));
 
-        _this.state = { name: "", value: "?", methods: ["hasVowels", "wordCheck", "toUpper", "toLower", "ucFirst", "isQuestion", "isIn", "wordCount", "toCurrency", "fromCurrency", "inverseCase", "alternatingCase", "getMiddle", "numberWords", "isDigit", "doubleCheck"] };
+        _this.state = { name: "", value: "?", response: "" };
 
         _this.handleClick = _this.handleClick.bind(_this);
         _this.handleChangeName = _this.handleChangeName.bind(_this);
-
-        _this.elements = _this.state.methods.map(function (method, index) {
-            return _react2.default.createElement(
-                'option',
-                { key: index, className: 'options', value: method },
-                method
-            );
-        });
-
         return _this;
     }
 
@@ -8145,15 +8137,8 @@ var Methods = exports.Methods = function (_React$Component) {
     }, {
         key: 'handleClick',
         value: function handleClick() {
-            var returnMethods = [(0, _stringclass.hasVowels)(this.state.name), (0, _stringclass.wordCheck)(this.state.name), (0, _stringclass.toUpper)(this.state.name), (0, _stringclass.toLower)(this.state.name), (0, _stringclass.ucFirst)(this.state.name), (0, _stringclass.isQuestion)(this.state.name), (0, _stringclass.isIn)(this.state.name), (0, _stringclass.wordCount)(this.state.name), (0, _stringclass.toCurrency)(this.state.name), (0, _stringclass.fromCurrency)(this.state.name), (0, _stringclass.inverseCase)(this.state.name), (0, _stringclass.alternatingCase)(this.state.name), (0, _stringclass.getMiddle)(this.state.name), (0, _stringclass.numberWords)(this.state.name), (0, _stringclass.isDigit)(this.state.name), (0, _stringclass.doubleCheck)(this.state.name)];
-            for (var i = 0; i < this.state.methods.length; i++) {
-                if (this.state.value === this.state.methods[i]) {
-                    var response = returnMethods[i];
-                    return _react2.default.createElement(Return, { onChange: response });
-                    // this.setState({result: response});
-                    // console.log(this.state.result)
-                }
-            }
+            var newString = String(stringMethods[this.state.value](this.state.name));
+            this.setState({ response: newString });
         }
     }, {
         key: 'render',
@@ -8162,51 +8147,65 @@ var Methods = exports.Methods = function (_React$Component) {
 
             return _react2.default.createElement(
                 'div',
-                { className: 'input-div' },
+                null,
                 _react2.default.createElement(
                     'div',
-                    null,
+                    { className: 'input-div' },
                     _react2.default.createElement(
-                        'p',
+                        'div',
                         null,
                         _react2.default.createElement(
-                            'b',
+                            'p',
                             null,
-                            'Enter string:'
-                        )
+                            _react2.default.createElement(
+                                'b',
+                                null,
+                                'Enter string:'
+                            )
+                        ),
+                        _react2.default.createElement('input', { id: 'string-input', type: 'text', name: this.state.name, onChange: this.handleChangeName })
                     ),
-                    _react2.default.createElement('input', { id: 'string-input', type: 'text', name: this.state.name, onChange: this.handleChangeName })
-                ),
-                _react2.default.createElement(
-                    'div',
-                    null,
                     _react2.default.createElement(
-                        'p',
+                        'div',
                         null,
                         _react2.default.createElement(
-                            'b',
+                            'p',
                             null,
-                            'Select method'
-                        )
-                    ),
-                    _react2.default.createElement(
-                        'select',
-                        { className: 'select-options', onChange: function onChange(event) {
-                                return _this2.setState({ value: event.target.value });
+                            _react2.default.createElement(
+                                'b',
+                                null,
+                                'Select method'
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'select',
+                            {
+                                className: 'select-options',
+                                onChange: function onChange(event) {
+                                    return _this2.setState({ value: event.target.value });
+                                },
+                                value: this.state.value
                             },
-                            value: this.state.value },
-                        this.elements
+                            Object.keys(stringMethods).map(function (method, index) {
+                                return _react2.default.createElement(
+                                    'option',
+                                    { key: index, className: 'options', value: method },
+                                    method
+                                );
+                            })
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        null,
+                        _react2.default.createElement(
+                            'button',
+                            { className: 'btn-result', onClick: this.handleClick },
+                            'Get Result'
+                        )
                     )
                 ),
-                _react2.default.createElement(
-                    'div',
-                    null,
-                    _react2.default.createElement(
-                        'button',
-                        { className: 'btn-result', onClick: this.handleClick },
-                        'Get Result'
-                    )
-                )
+                _react2.default.createElement(_Result.Result, { value: this.state.response })
             );
         }
     }]);
