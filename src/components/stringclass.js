@@ -3,8 +3,7 @@ function wordCheck(name){
     /*Check if the string is empty */
     if(!name || name === ""){
         return "Please add a string"; 
-    }
-    else{return true;}
+    } else{return true;}
 }
 
 function hasVowels(name){
@@ -73,7 +72,9 @@ function ucFirst(name){
     /*Converts the first letter of a string to uppercase*/
     if(wordCheck(name)=== true){
         let splitName = name.charAt(0);
-        return (toUpper(splitName)+ name.substr(1));
+        if(toUpper(splitName)!== "String is already in uppercase"){
+            return (toUpper(splitName)+ name.substr(1));
+        } else{ return "The first letter is already in uppercase";}
     }
 }
 
@@ -190,7 +191,7 @@ function getMiddle(name){
 function numberWords(name){
     /*Returns the numbers in words */
     if(wordCheck(name)=== true){
-        if(!isNaN(Number(name))){
+        if(!isNan(Number(name))){
             let numbers = {0: "and",1:"one",2:"two",3:"three",4:"four",
             5:"five",6:"six",7:"seven",8:"eight",9:"nine"};
             let splitNumber = name.toLocaleString().split(",");
@@ -207,7 +208,7 @@ function numberWords(name){
                 }
             }
             return listNums.join(" ");
-        } else {return "This is not a number"};
+        } else {return "This is not a number";}
     }
 }
 
@@ -243,6 +244,6 @@ function doubleCheck(name){
     }
 }
 
-export { hasVowels, wordCheck, toUpper, toLower, ucFirst, isQuestion, isIn, 
+export { hasVowels, toUpper, toLower, ucFirst, isQuestion, isIn, 
         wordCount, toCurrency, fromCurrency, inverseCase, alternatingCase, getMiddle, 
         numberWords, isDigit, doubleCheck }

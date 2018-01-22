@@ -974,26 +974,25 @@ var Result = exports.Result = function (_React$Component) {
     }
 
     _createClass(Result, [{
-        key: 'render',
+        key: "render",
         value: function render() {
-            console.log('props: ', this.props);
             return _react2.default.createElement(
-                'div',
-                { className: 'textarea-div' },
+                "div",
+                { className: "textarea-div" },
                 _react2.default.createElement(
-                    'div',
+                    "div",
                     null,
                     _react2.default.createElement(
-                        'p',
+                        "p",
                         null,
                         _react2.default.createElement(
-                            'b',
+                            "b",
                             null,
-                            'Result:'
+                            "Result:"
                         )
                     )
                 ),
-                _react2.default.createElement('textarea', { className: 'text-area', rows: '10', value: this.props.value })
+                _react2.default.createElement("textarea", { className: "text-area", rows: "10", value: this.props.value })
             );
         }
     }]);
@@ -8382,7 +8381,11 @@ function ucFirst(name) {
     /*Converts the first letter of a string to uppercase*/
     if (wordCheck(name) === true) {
         var splitName = name.charAt(0);
-        return toUpper(splitName) + name.substr(1);
+        if (toUpper(splitName) !== "String is already in uppercase") {
+            return toUpper(splitName) + name.substr(1);
+        } else {
+            return "The first letter is already in uppercase";
+        }
     }
 }
 
@@ -8493,7 +8496,7 @@ function getMiddle(name) {
 function numberWords(name) {
     /*Returns the numbers in words */
     if (wordCheck(name) === true) {
-        if (!isNaN(Number(name))) {
+        if (!isNan(Number(name))) {
             var numbers = { 0: "and", 1: "one", 2: "two", 3: "three", 4: "four",
                 5: "five", 6: "six", 7: "seven", 8: "eight", 9: "nine" };
             var splitNumber = name.toLocaleString().split(",");
@@ -8512,7 +8515,7 @@ function numberWords(name) {
             return listNums.join(" ");
         } else {
             return "This is not a number";
-        };
+        }
     }
 }
 
@@ -8567,7 +8570,6 @@ function doubleCheck(name) {
 }
 
 exports.hasVowels = hasVowels;
-exports.wordCheck = wordCheck;
 exports.toUpper = toUpper;
 exports.toLower = toLower;
 exports.ucFirst = ucFirst;
