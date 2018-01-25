@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "node server.js",
-    "test": "mocha -w spec/helpers/browser.js spec/*.spec.js",
+    "test": "mocha spec/helpers/browser.js spec/*.spec.js",
     "dev:hot": "webpack-dev-server --hot --inline --progress --colors --watch --display-error-details --display-cached --content-base ./",
     "webpack": "webpack"
   },

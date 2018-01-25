@@ -2,4 +2,3 @@ language: node_js
 node_js:
   - "6.11.0"
 
-test: travis_wait npm test
