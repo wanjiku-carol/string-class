@@ -6,14 +6,19 @@ This app hass different methods of modifying strings.
 
 *Install App*
 
-Clone the repository
-> git clone https://github.com/wanjiku-carol/string-class.git
+Clone the repository:
 
-cd into directory
-> cd string-class
+> $ git clone https://github.com/wanjiku-carol/string-class.git
 
-Install app dependencies
-> npm install
+cd into directory:
 
-Run the tests
-> npm test
+> $ cd string-class
+
+Install app dependencies:
+> $ npm install
+
+Run the tests:
+> $ npm test
+
+Run the app:
+> $ npm start

@@ -1,8 +1,8 @@
 var path = require('path');
- var webpack = require('webpack');
+var webpack = require('webpack');
      
  module.exports = {
-     entry: './src/stringclass.js',
+     entry: './app.js',
      output: {
          path: path.resolve(__dirname, 'build'),
          filename: 'app.bundle.js'
@@ -13,7 +13,7 @@ var path = require('path');
                  test: /\.js$/,
                  loader: 'babel-loader',
                  query: {
-                     presets: ['es2015', 'react']
+                     presets: ['es2015','stage-0', 'react','env', 'airbnb']
                  }
              }
          ]
@@ -21,5 +21,11 @@ var path = require('path');
      stats: {
          colors: true
      },
-     devtool: 'source-map'
+     devtool: 'source-map',
+     externals: {
+         'cheerio': 'window',
+         'react/addons': true,
+         'react/lib/ExecutionEnvironment': true,
+         'react/lib/ReactContext': true
+     }
  };
