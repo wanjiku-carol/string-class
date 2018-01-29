@@ -1,6 +1,6 @@
 import React from 'react';
 import Adapter from 'enzyme-adapter-react-16';
-import { configure, mount, shallow} from 'enzyme';
+import { configure, shallow} from 'enzyme';
 import { expect } from 'chai';
 import { Header } from '../src/components/Header';
 
@@ -20,4 +20,3 @@ describe('<Header />', ()=>{
         expect(wrapper.hasClass("heading")).to.equal(true);
     })
 });
-

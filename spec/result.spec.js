@@ -1,8 +1,8 @@
 import React from 'react';
-import { configure, mount, shallow} from 'enzyme';
+import { configure, shallow} from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import { expect } from 'chai';
-import { sinon, spy } from 'sinon';
+import { spy } from 'sinon';
 
 import { Result } from '../src/components/Result';
 
@@ -20,5 +20,4 @@ describe('<Result />', ()=>{
     it('Textarea className to be "textarea-div"', ()=>{
         expect(wrapper.props().className).to.equal('textarea-div');
     });
-
 });

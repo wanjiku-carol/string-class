@@ -7,7 +7,7 @@ import { Result } from './Result.js';
 export class Methods extends React.Component{
     constructor(props) {
         super(props);
-        this.state = {name: "", value: "?", response: ""};
+        this.state = {name: "", value: "hasVowels", response: ""};
         
         this.handleClick = this.handleClick.bind(this);
         this.handleChangeName = this.handleChangeName.bind(this);
@@ -35,8 +35,7 @@ export class Methods extends React.Component{
                         <select
                             className="select-options"
                             onChange={event => this.setState({ value: event.target.value })}
-                            value={this.state.value}
-                        >
+                            value={this.state.value}>
                             {Object.keys(stringMethods).map((method, index) => {
                                 return <option key = {index} className="options" value={method}>{method}</option>
                             })}

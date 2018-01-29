@@ -15,4 +15,4 @@ describe('<Intro />', ()=>{
     it('should have a span', ()=>{
         expect(wrapper.find('span').every('span')).to.be.equal(true);
     })
-})
+});

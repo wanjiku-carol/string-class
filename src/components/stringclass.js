@@ -1,14 +1,13 @@
-
-function wordCheck(name){
+const wordCheck = (name)=>{
     /*Check if the string is empty */
     if(!name || name === ""){
         return "Please add a string"; 
-    } else{return true;}
+    }
 }
 
-function hasVowels(name){
+const hasVowels = (name)=>{
     /*Checks if the string contains vowels*/
-    if(wordCheck(name)=== true){
+    if(wordCheck(name)!== "Please add a string"){
         let vowels = ['a','e','i','o','u'];
         let nameSplit = name.split("");
         for(let word of nameSplit){
@@ -19,13 +18,13 @@ function hasVowels(name){
             }
         }
         return false;
-    }
+    }else{return wordCheck(name);}
     
 }
 
-function toUpper(name){
+const toUpper = (name)=>{
     /*Converts a string to uppercase */
-     if(wordCheck(name)=== true){
+    if(wordCheck(name)!== "Please add a string"){
         let newString = [];
         for(let word of name.split(" ")){
             let resultVar = "";
@@ -39,13 +38,12 @@ function toUpper(name){
         }else {
             return newString.join(" ");
         }
-    }
-    
+    }else{return wordCheck(name);}
 }
 
-function toLower(name) {
+const toLower = (name)=>{
     /*Converts a string to lowercase */
-    if(wordCheck(name)=== true){
+    if(wordCheck(name)!== "Please add a string"){
         let newString = [];
         for(let word of name.split(" ")){
             let resultVar = "";
@@ -64,13 +62,13 @@ function toLower(name) {
         } else{
             return newString.join(" ");
         }
-    }
+    }else{return wordCheck(name);}
     
 }
 
-function ucFirst(name){
+const ucFirst = (name)=>{
     /*Converts the first letter of a string to uppercase*/
-    if(wordCheck(name)=== true){
+    if(wordCheck(name)!== "Please add a string"){
         let splitName = name.charAt(0);
         if(toUpper(splitName)!== "String is already in uppercase"){
             return (toUpper(splitName)+ name.substr(1));
@@ -78,70 +76,66 @@ function ucFirst(name){
     }
 }
 
-function isQuestion(name){
+const isQuestion = (name)=>{
     /*Checks if string is a question */
-    if(wordCheck(name)=== true){
-       if(name.includes("?")){
+    if(wordCheck(name)!== "Please add a string"){
+        let splitString = name.split(" ");
+       if((name.slice(-1))==="?"){
         return true;
         } else{
             return false;
         } 
-    }
+    }else{return wordCheck(name);}
     
 }
 
-function isIn(name){
+const isIn = (name)=>{
     /*Returns a list of the words in the string, as an array */
-    if(wordCheck(name)=== true){
+    if(wordCheck(name)!== "Please add a string"){
        if(name instanceof Array){
         return "This is already an array";
         } else{
-            if(name.includes(" ")){
-                return name.split(" ");
-            } else{
-                return name.split("");
-            }
+            let splitName = name.includes(" ")?name.split(" "): name;
+            return splitName;
         } 
-    }
-    
-    
+    }else{return wordCheck(name);}  
 }
 
-function wordCount(name){
+const wordCount = (name)=>{
     /*Returns the number of words in the string */
-    if(wordCheck(name)=== true){
+    if(wordCheck(name)!== "Please add a string"){
         return name.split(" ").length;
         
     }
 }
 
-function toCurrency(name){
+const toCurrency = (name)=>{
     /*Returns a currency representation of the String */
-    if(wordCheck(name)=== true){
+    if(wordCheck(name)!== "Please add a string"){
         let currencyString = Number(name);
         if(typeof currencyString === "number" && !isNaN(currencyString)){
             return currencyString.toLocaleString();
         } else{
             return "This is not a number";
         }
-    }
+    }else{return wordCheck(name);}
 }
 
-function fromCurrency(name){
+const fromCurrency = (name)=>{
     /*Returns a number representation of the Currency String */
-    if(wordCheck(name)=== true){
+    if(wordCheck(name)!== "Please add a string"){
         let currencyString = name.replace(/\,/g,'');
         if(!isNaN(Number(currencyString))){
             return currencyString;
         } else{
             return "This is not a number"; 
         }
-    }
+    }else{return wordCheck(name);}
 }
 
-function inverseCase(name){
+const inverseCase = (name)=>{
     /*Returns each letter in the string as an inverse of its current case */
-    if(wordCheck(name)=== true){
+    if(wordCheck(name)!== "Please add a string"){
         
         let regexpUpper = /^[A-Z]/;
         let splitString = name.split("");
@@ -154,25 +148,24 @@ function inverseCase(name){
             }
         });
         return inverseString.join("");
-    }
+    }else{return wordCheck(name);}
 
 }
 
-function alternatingCase(name){
+const alternatingCase = (name)=>{
     /*Returns the letters in alternating cases */
-    if(wordCheck(name)=== true){
-        
+    if(wordCheck(name)!== "Please add a string"){
         let words = name.toLowerCase().split("");
         for (let index = 0; index < words.length; index += 2) {
             words[index] = words[index].toUpperCase();
         }
         return words.join("");
-    }
+    }else{return wordCheck(name);}
 }
 
-function getMiddle(name){
+const getMiddle = (name)=>{
     /*Returns the character(s) in the middle of the string */
-    if(wordCheck(name)=== true){
+    if(wordCheck(name)!== "Please add a string"){
         
         let position;
         let length;
@@ -185,12 +178,12 @@ function getMiddle(name){
         }
         let result = name.substring(position, position + length);
         return result;
-    }
+    }else{return wordCheck(name);}
 }
 
-function numberWords(name){
+const numberWords = (name)=>{
     /*Returns the numbers in words */
-    if(wordCheck(name)=== true){
+    if(wordCheck(name)!== "Please add a string"){
         if(!isNaN(Number(name))){
             let numbers = {0: "and",1:"one",2:"two",3:"three",4:"four",
             5:"five",6:"six",7:"seven",8:"eight",9:"nine"};
@@ -209,12 +202,12 @@ function numberWords(name){
             }
             return listNums.join(" ");
         } else {return "This is not a number";}
-    }
+    }else{return wordCheck(name);}
 }
 
-function isDigit(name){
+const isDigit = (name)=>{
     /*Returns true if the string is a digit */
-    if(wordCheck(name)=== true){ 
+    if(wordCheck(name)!== "Please add a string"){ 
         let splitName = name.split("");
         if(splitName.length>1){
             return false;
@@ -228,20 +221,20 @@ function isDigit(name){
             }
                 
         }
-    }
+    }else{return wordCheck(name);}
         
 }
 
-function doubleCheck(name){
+const doubleCheck = (name)=>{
     /*Checks for double characters in strings */
-    if(wordCheck(name)=== true){
+    if(wordCheck(name)!== "Please add a string"){
         if((name.match(/[^\w\s]|(.)(?=\1)/gi, "")) !== null){
             return true;
         }
         else{
             return false;
         }
-    }
+    }else{return wordCheck(name);}
 }
 
 export { hasVowels, toUpper, toLower, ucFirst, isQuestion, isIn, 
