@@ -1,0 +1,25 @@
+{
+   "extends": "airbnb",
+   "env": {
+      "browser": true,
+      "node": true,
+      "mocha": true
+    },  
+    "settings": {
+                  "ecmascript": 6,
+                  "jsx": true
+                },
+    "rules": {
+      "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+    },
+    "overrides": [
+    {
+        "files": "*.spec.js",
+        "rules": {
+            "no-unused-expressions": "off"
+        }
+    }
+],  
+    "plugins": ["react", "import"], 
+    "parser": "babel-eslint"
+}
