@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 15);
+/******/ 	return __webpack_require__(__webpack_require__.s = 14);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -264,9 +264,9 @@ process.umask = function () {
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(16);
+  module.exports = __webpack_require__(15);
 } else {
-  module.exports = __webpack_require__(17);
+  module.exports = __webpack_require__(16);
 }
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
@@ -600,7 +600,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 if (process.env.NODE_ENV !== 'production') {
   var invariant = __webpack_require__(5);
   var warning = __webpack_require__(6);
-  var ReactPropTypesSecret = __webpack_require__(18);
+  var ReactPropTypesSecret = __webpack_require__(17);
   var loggedTypeFailures = {};
 }
 
@@ -925,7 +925,7 @@ module.exports = shallowEqual;
  * 
  */
 
-var isTextNode = __webpack_require__(21);
+var isTextNode = __webpack_require__(20);
 
 /*eslint-disable no-bitwise */
 
@@ -989,89 +989,27 @@ module.exports = focusNode;
 "use strict";
 
 
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.Result = undefined;
-
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Result = exports.Result = function (_React$Component) {
-    _inherits(Result, _React$Component);
-
-    function Result() {
-        _classCallCheck(this, Result);
-
-        return _possibleConstructorReturn(this, (Result.__proto__ || Object.getPrototypeOf(Result)).apply(this, arguments));
-    }
-
-    _createClass(Result, [{
-        key: "render",
-        value: function () {
-            function render() {
-                return _react2["default"].createElement(
-                    "div",
-                    { className: "textarea-div" },
-                    _react2["default"].createElement(
-                        "div",
-                        null,
-                        _react2["default"].createElement(
-                            "p",
-                            null,
-                            _react2["default"].createElement(
-                                "b",
-                                null,
-                                "Result:"
-                            )
-                        )
-                    ),
-                    _react2["default"].createElement("textarea", { className: "text-area", rows: "10", value: this.props.value })
-                );
-            }
-
-            return render;
-        }()
-    }]);
-
-    return Result;
-}(_react2["default"].Component);
-
-/***/ }),
-/* 15 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactDom = __webpack_require__(19);
+var _reactDom = __webpack_require__(18);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _Header = __webpack_require__(28);
+var _Header = __webpack_require__(27);
 
-var _Intro = __webpack_require__(29);
+var _Header2 = _interopRequireDefault(_Header);
 
-var _Methods = __webpack_require__(30);
+var _Intro = __webpack_require__(28);
 
-var _Result = __webpack_require__(14);
+var _Intro2 = _interopRequireDefault(_Intro);
+
+var _Methods = __webpack_require__(29);
+
+var _Methods2 = _interopRequireDefault(_Methods);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
@@ -1097,9 +1035,9 @@ var App = function (_React$Component) {
                 return _react2['default'].createElement(
                     'div',
                     null,
-                    _react2['default'].createElement(_Header.Header, null),
-                    _react2['default'].createElement(_Intro.Intro, null),
-                    _react2['default'].createElement(_Methods.Methods, null)
+                    _react2['default'].createElement(_Header2['default'], null),
+                    _react2['default'].createElement(_Intro2['default'], null),
+                    _react2['default'].createElement(_Methods2['default'], null)
                 );
             }
 
@@ -1113,7 +1051,7 @@ var App = function (_React$Component) {
 _reactDom2['default'].render(_react2['default'].createElement(App, null), document.getElementById("app"));
 
 /***/ }),
-/* 16 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1286,7 +1224,7 @@ var U = { Children: { map: function () {
     W = V && U || V;module.exports = W["default"] ? W["default"] : W;
 
 /***/ }),
-/* 17 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2710,7 +2648,7 @@ if (process.env.NODE_ENV !== "production") {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 18 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2728,7 +2666,7 @@ var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 module.exports = ReactPropTypesSecret;
 
 /***/ }),
-/* 19 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2763,14 +2701,14 @@ if (process.env.NODE_ENV === 'production') {
   // DCE check should happen before ReactDOM bundle executes so that
   // DevTools can report bad minification during injection.
   checkDCE();
-  module.exports = __webpack_require__(20);
+  module.exports = __webpack_require__(19);
 } else {
-  module.exports = __webpack_require__(23);
+  module.exports = __webpack_require__(22);
 }
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 20 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5347,7 +5285,7 @@ Z.injectIntoDevTools({ findFiberByHostInstance: pb, bundleType: 0, version: "16.
     Ug = Tg && Sg || Tg;module.exports = Ug["default"] ? Ug["default"] : Ug;
 
 /***/ }),
-/* 21 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5362,7 +5300,7 @@ Z.injectIntoDevTools({ findFiberByHostInstance: pb, bundleType: 0, version: "16.
  * @typechecks
  */
 
-var isNode = __webpack_require__(22);
+var isNode = __webpack_require__(21);
 
 /**
  * @param {*} object The object to check.
@@ -5375,7 +5313,7 @@ function isTextNode(object) {
 module.exports = isTextNode;
 
 /***/ }),
-/* 22 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5406,7 +5344,7 @@ function isNode(object) {
 module.exports = isNode;
 
 /***/ }),
-/* 23 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5417,7 +5355,7 @@ module.exports = isNode;
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- */var _typeof=typeof Symbol==="function"&&typeof Symbol.iterator==="symbol"?function(obj){return typeof obj;}:function(obj){return obj&&typeof Symbol==="function"&&obj.constructor===Symbol&&obj!==Symbol.prototype?"symbol":typeof obj;};if(process.env.NODE_ENV!=="production"){(function(){'use strict';var React=__webpack_require__(1);var invariant=__webpack_require__(5);var warning=__webpack_require__(6);var ExecutionEnvironment=__webpack_require__(8);var _assign=__webpack_require__(3);var emptyFunction=__webpack_require__(2);var EventListener=__webpack_require__(9);var getActiveElement=__webpack_require__(10);var shallowEqual=__webpack_require__(11);var containsNode=__webpack_require__(12);var focusNode=__webpack_require__(13);var emptyObject=__webpack_require__(4);var checkPropTypes=__webpack_require__(7);var hyphenateStyleName=__webpack_require__(24);var camelizeStyleName=__webpack_require__(26);/**
+ */var _typeof=typeof Symbol==="function"&&typeof Symbol.iterator==="symbol"?function(obj){return typeof obj;}:function(obj){return obj&&typeof Symbol==="function"&&obj.constructor===Symbol&&obj!==Symbol.prototype?"symbol":typeof obj;};if(process.env.NODE_ENV!=="production"){(function(){'use strict';var React=__webpack_require__(1);var invariant=__webpack_require__(5);var warning=__webpack_require__(6);var ExecutionEnvironment=__webpack_require__(8);var _assign=__webpack_require__(3);var emptyFunction=__webpack_require__(2);var EventListener=__webpack_require__(9);var getActiveElement=__webpack_require__(10);var shallowEqual=__webpack_require__(11);var containsNode=__webpack_require__(12);var focusNode=__webpack_require__(13);var emptyObject=__webpack_require__(4);var checkPropTypes=__webpack_require__(7);var hyphenateStyleName=__webpack_require__(23);var camelizeStyleName=__webpack_require__(25);/**
  * WARNING: DO NOT manually require this module.
  * This is a replacement for `invariant(...)` used by the error code system
  * and will _only_ be required by the corresponding babel pass.
@@ -8390,7 +8328,7 @@ var reactDom=ReactDOM$3['default']?ReactDOM$3['default']:ReactDOM$3;module.expor
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 24 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8405,7 +8343,7 @@ var reactDom=ReactDOM$3['default']?ReactDOM$3['default']:ReactDOM$3;module.expor
 
 
 
-var hyphenate = __webpack_require__(25);
+var hyphenate = __webpack_require__(24);
 
 var msPattern = /^ms-/;
 
@@ -8432,7 +8370,7 @@ function hyphenateStyleName(string) {
 module.exports = hyphenateStyleName;
 
 /***/ }),
-/* 25 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8468,7 +8406,7 @@ function hyphenate(string) {
 module.exports = hyphenate;
 
 /***/ }),
-/* 26 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8483,7 +8421,7 @@ module.exports = hyphenate;
 
 
 
-var camelize = __webpack_require__(27);
+var camelize = __webpack_require__(26);
 
 var msPattern = /^-ms-/;
 
@@ -8511,7 +8449,7 @@ function camelizeStyleName(string) {
 module.exports = camelizeStyleName;
 
 /***/ }),
-/* 27 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8546,16 +8484,16 @@ function camelize(string) {
 module.exports = camelize;
 
 /***/ }),
-/* 28 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
-exports.Header = undefined;
+exports["default"] = Header;
 
 var _react = __webpack_require__(1);
 
@@ -8563,21 +8501,221 @@ var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-var Header = exports.Header = function () {
-    function Header() {
-        return _react2["default"].createElement(
-            "div",
-            { className: "heading" },
-            _react2["default"].createElement(
-                "h2",
-                null,
-                "String Class Extension"
-            )
-        );
-    }
+function Header() {
+  return _react2["default"].createElement(
+    "div",
+    { className: "heading" },
+    _react2["default"].createElement(
+      "h2",
+      null,
+      "String Class Extension"
+    )
+  );
+}
 
-    return Header;
-}();
+/***/ }),
+/* 28 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports["default"] = Intro;
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+function Intro() {
+  return _react2["default"].createElement(
+    "div",
+    { className: "paragraph-box" },
+    _react2["default"].createElement(
+      "p",
+      null,
+      "Using Prototype Oriented Programming, methods, procedures and instance attributes are added to the String class to support more string manipulation features. Listed below are a list of the methods to be add to the string class."
+    ),
+    _react2["default"].createElement(
+      "span",
+      { className: "unordered-list" },
+      _react2["default"].createElement(
+        "ul",
+        null,
+        _react2["default"].createElement(
+          "li",
+          null,
+          _react2["default"].createElement(
+            "b",
+            null,
+            "hasVowels (typeof Boolean):"
+          ),
+          " Returns true if the string contains vowels."
+        ),
+        _react2["default"].createElement(
+          "li",
+          null,
+          _react2["default"].createElement(
+            "b",
+            null,
+            "toUpper (typeof String):"
+          ),
+          " Returns the String in question but with all characters in upper cases as applicable."
+        ),
+        _react2["default"].createElement(
+          "li",
+          null,
+          _react2["default"].createElement(
+            "b",
+            null,
+            "toLower (typeof String):"
+          ),
+          " Returns the String in question but with all characters in their lower cases as applicable. "
+        ),
+        _react2["default"].createElement(
+          "li",
+          null,
+          _react2["default"].createElement(
+            "b",
+            null,
+            "ucFirst (typeof String):"
+          ),
+          " Returns the String in question but changes the First Character to an Upper case."
+        ),
+        _react2["default"].createElement(
+          "li",
+          null,
+          _react2["default"].createElement(
+            "b",
+            null,
+            "isQuestion (typeof Boolean):"
+          ),
+          " Return true if the string is a question (ending with a question mark). "
+        ),
+        _react2["default"].createElement(
+          "li",
+          null,
+          _react2["default"].createElement(
+            "b",
+            null,
+            "in:"
+          ),
+          " Returns a list of the words in the string, as an Array."
+        )
+      )
+    ),
+    _react2["default"].createElement(
+      "span",
+      { className: "unordered-list" },
+      _react2["default"].createElement(
+        "ul",
+        null,
+        _react2["default"].createElement(
+          "li",
+          null,
+          _react2["default"].createElement(
+            "b",
+            null,
+            "wordCount (typeof Number):"
+          ),
+          " Returns the number of words in the string."
+        ),
+        _react2["default"].createElement(
+          "li",
+          null,
+          _react2["default"].createElement(
+            "b",
+            null,
+            "toCurrency (typeof String):"
+          ),
+          " Returns a currency representation of the String"
+        ),
+        _react2["default"].createElement(
+          "li",
+          null,
+          _react2["default"].createElement(
+            "b",
+            null,
+            "fromCurrency (typeof Number):"
+          ),
+          " Returns a number representation of the Currency String"
+        ),
+        _react2["default"].createElement(
+          "li",
+          null,
+          _react2["default"].createElement(
+            "b",
+            null,
+            "inverseCase (typeof String):"
+          ),
+          " Returns each letter in the string as an inverse of its current case"
+        ),
+        _react2["default"].createElement(
+          "li",
+          null,
+          _react2["default"].createElement(
+            "b",
+            null,
+            "alternatingCase (typeof String):"
+          ),
+          " Returns the letters in alternating cases."
+        )
+      )
+    ),
+    _react2["default"].createElement(
+      "span",
+      { className: "unordered-list" },
+      _react2["default"].createElement(
+        "ul",
+        null,
+        _react2["default"].createElement(
+          "li",
+          null,
+          _react2["default"].createElement(
+            "b",
+            null,
+            "getMiddle (typeof String):"
+          ),
+          " Returns the character(s) in the middle of the string"
+        ),
+        _react2["default"].createElement(
+          "li",
+          null,
+          _react2["default"].createElement(
+            "b",
+            null,
+            "numberWords (typeof String):"
+          ),
+          " Returns the numbers in words"
+        ),
+        _react2["default"].createElement(
+          "li",
+          null,
+          _react2["default"].createElement(
+            "b",
+            null,
+            "isDigit (typeof Boolean):"
+          ),
+          " Returns true if the string is a digit(one number)"
+        ),
+        _react2["default"].createElement(
+          "li",
+          null,
+          _react2["default"].createElement(
+            "b",
+            null,
+            "doubleCheck (typeof Boolean):"
+          ),
+          " Returns true if a string contains double characters(including whitespace character)"
+        )
+      )
+    )
+  );
+}
 
 /***/ }),
 /* 29 */
@@ -8587,217 +8725,8 @@ var Header = exports.Header = function () {
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
-exports.Intro = undefined;
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-var Intro = exports.Intro = function () {
-    function Intro() {
-        return _react2["default"].createElement(
-            "div",
-            { className: "paragraph-box" },
-            _react2["default"].createElement(
-                "p",
-                null,
-                "Using Prototype Oriented Programming, methods, procedures and instance attributes are added to the String class to support more string manipulation features. Listed below are a list of the methods to be add to the string class."
-            ),
-            _react2["default"].createElement(
-                "span",
-                { className: "unordered-list" },
-                _react2["default"].createElement(
-                    "ul",
-                    null,
-                    _react2["default"].createElement(
-                        "li",
-                        null,
-                        _react2["default"].createElement(
-                            "b",
-                            null,
-                            "hasVowels (typeof Boolean):"
-                        ),
-                        " Returns true if the string contains vowels."
-                    ),
-                    _react2["default"].createElement(
-                        "li",
-                        null,
-                        _react2["default"].createElement(
-                            "b",
-                            null,
-                            "toUpper (typeof String):"
-                        ),
-                        " Returns the String in question but with all characters in upper cases as applicable."
-                    ),
-                    _react2["default"].createElement(
-                        "li",
-                        null,
-                        _react2["default"].createElement(
-                            "b",
-                            null,
-                            "toLower (typeof String):"
-                        ),
-                        " Returns the String in question but with all characters in their lower cases as applicable. "
-                    ),
-                    _react2["default"].createElement(
-                        "li",
-                        null,
-                        _react2["default"].createElement(
-                            "b",
-                            null,
-                            "ucFirst (typeof String):"
-                        ),
-                        " Returns the String in question but changes the First Character to an Upper case."
-                    ),
-                    _react2["default"].createElement(
-                        "li",
-                        null,
-                        _react2["default"].createElement(
-                            "b",
-                            null,
-                            "isQuestion (typeof Boolean):"
-                        ),
-                        " Return true if the string is a question (ending with a question mark). "
-                    ),
-                    _react2["default"].createElement(
-                        "li",
-                        null,
-                        _react2["default"].createElement(
-                            "b",
-                            null,
-                            "in:"
-                        ),
-                        " Returns a list of the words in the string, as an Array."
-                    )
-                )
-            ),
-            _react2["default"].createElement(
-                "span",
-                { className: "unordered-list" },
-                _react2["default"].createElement(
-                    "ul",
-                    null,
-                    _react2["default"].createElement(
-                        "li",
-                        null,
-                        _react2["default"].createElement(
-                            "b",
-                            null,
-                            "wordCount (typeof Number):"
-                        ),
-                        " Returns the number of words in the string."
-                    ),
-                    _react2["default"].createElement(
-                        "li",
-                        null,
-                        _react2["default"].createElement(
-                            "b",
-                            null,
-                            "toCurrency (typeof String):"
-                        ),
-                        " Returns a currency representation of the String"
-                    ),
-                    _react2["default"].createElement(
-                        "li",
-                        null,
-                        _react2["default"].createElement(
-                            "b",
-                            null,
-                            "fromCurrency (typeof Number):"
-                        ),
-                        " Returns a number representation of the Currency String"
-                    ),
-                    _react2["default"].createElement(
-                        "li",
-                        null,
-                        _react2["default"].createElement(
-                            "b",
-                            null,
-                            "inverseCase (typeof String):"
-                        ),
-                        " Returns each letter in the string as an inverse of its current case"
-                    ),
-                    _react2["default"].createElement(
-                        "li",
-                        null,
-                        _react2["default"].createElement(
-                            "b",
-                            null,
-                            "alternatingCase (typeof String):"
-                        ),
-                        " Returns the letters in alternating cases."
-                    )
-                )
-            ),
-            _react2["default"].createElement(
-                "span",
-                { className: "unordered-list" },
-                _react2["default"].createElement(
-                    "ul",
-                    null,
-                    _react2["default"].createElement(
-                        "li",
-                        null,
-                        _react2["default"].createElement(
-                            "b",
-                            null,
-                            "getMiddle (typeof String):"
-                        ),
-                        " Returns the character(s) in the middle of the string"
-                    ),
-                    _react2["default"].createElement(
-                        "li",
-                        null,
-                        _react2["default"].createElement(
-                            "b",
-                            null,
-                            "numberWords (typeof String):"
-                        ),
-                        " Returns the numbers in words"
-                    ),
-                    _react2["default"].createElement(
-                        "li",
-                        null,
-                        _react2["default"].createElement(
-                            "b",
-                            null,
-                            "isDigit (typeof Boolean):"
-                        ),
-                        " Returns true if the string is a digit(one number)"
-                    ),
-                    _react2["default"].createElement(
-                        "li",
-                        null,
-                        _react2["default"].createElement(
-                            "b",
-                            null,
-                            "doubleCheck (typeof Boolean):"
-                        ),
-                        " Returns true if a string contains double characters(including whitespace character)"
-                    )
-                )
-            )
-        );
-    }
-
-    return Intro;
-}();
-
-/***/ }),
-/* 30 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.Methods = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -8805,11 +8734,13 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _stringclass = __webpack_require__(31);
+var _stringclass = __webpack_require__(30);
 
 var stringMethods = _interopRequireWildcard(_stringclass);
 
-var _Result = __webpack_require__(14);
+var _Result = __webpack_require__(31);
+
+var _Result2 = _interopRequireDefault(_Result);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj['default'] = obj; return newObj; } }
 
@@ -8821,559 +8752,532 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Methods = exports.Methods = function (_React$Component) {
-    _inherits(Methods, _React$Component);
+var Methods = function (_React$Component) {
+  _inherits(Methods, _React$Component);
 
-    function Methods(props) {
-        _classCallCheck(this, Methods);
+  function Methods(props) {
+    _classCallCheck(this, Methods);
 
-        var _this = _possibleConstructorReturn(this, (Methods.__proto__ || Object.getPrototypeOf(Methods)).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Methods.__proto__ || Object.getPrototypeOf(Methods)).call(this, props));
 
-        _this.state = { name: "", value: "hasVowels", response: "" };
+    _this.state = { name: '', value: 'hasVowels', response: '' };
 
-        _this.handleClick = _this.handleClick.bind(_this);
-        _this.handleChangeName = _this.handleChangeName.bind(_this);
-        return _this;
-    }
+    _this.handleClick = _this.handleClick.bind(_this);
+    _this.handleChangeName = _this.handleChangeName.bind(_this);
+    return _this;
+  }
 
-    _createClass(Methods, [{
-        key: 'handleChangeName',
-        value: function () {
-            function handleChangeName(e) {
-                this.setState({ name: e.target.value });
-            }
+  _createClass(Methods, [{
+    key: 'handleChangeName',
+    value: function () {
+      function handleChangeName(e) {
+        this.setState({ name: e.target.value });
+      }
 
-            return handleChangeName;
-        }()
-    }, {
-        key: 'handleClick',
-        value: function () {
-            function handleClick() {
-                var newString = String(stringMethods[this.state.value](this.state.name));
-                this.setState({ response: newString });
-            }
+      return handleChangeName;
+    }()
+  }, {
+    key: 'handleClick',
+    value: function () {
+      function handleClick() {
+        var newString = String(stringMethods[this.state.value](this.state.name));
+        this.setState({ response: newString });
+      }
 
-            return handleClick;
-        }()
-    }, {
-        key: 'render',
-        value: function () {
-            function render() {
-                var _this2 = this;
+      return handleClick;
+    }()
+  }, {
+    key: 'render',
+    value: function () {
+      function render() {
+        var _this2 = this;
 
-                return _react2['default'].createElement(
-                    'div',
-                    null,
-                    _react2['default'].createElement(
-                        'div',
-                        { className: 'input-div' },
-                        _react2['default'].createElement(
-                            'div',
-                            null,
-                            _react2['default'].createElement(
-                                'p',
-                                null,
-                                _react2['default'].createElement(
-                                    'b',
-                                    null,
-                                    'Enter string:'
-                                )
-                            ),
-                            _react2['default'].createElement('input', { id: 'string-input', type: 'text', name: this.state.name, onChange: this.handleChangeName })
-                        ),
-                        _react2['default'].createElement(
-                            'div',
-                            null,
-                            _react2['default'].createElement(
-                                'p',
-                                null,
-                                _react2['default'].createElement(
-                                    'b',
-                                    null,
-                                    'Select method'
-                                )
-                            ),
-                            _react2['default'].createElement(
-                                'select',
-                                {
-                                    className: 'select-options',
-                                    onChange: function () {
-                                        function onChange(event) {
-                                            return _this2.setState({ value: event.target.value });
-                                        }
+        return _react2['default'].createElement(
+          'div',
+          null,
+          _react2['default'].createElement(
+            'div',
+            { className: 'input-div' },
+            _react2['default'].createElement(
+              'div',
+              null,
+              _react2['default'].createElement(
+                'p',
+                null,
+                _react2['default'].createElement(
+                  'b',
+                  null,
+                  'Enter string:'
+                )
+              ),
+              _react2['default'].createElement('input', { id: 'string-input', type: 'text', name: this.state.name, onChange: this.handleChangeName })
+            ),
+            _react2['default'].createElement(
+              'div',
+              null,
+              _react2['default'].createElement(
+                'p',
+                null,
+                _react2['default'].createElement(
+                  'b',
+                  null,
+                  'Select method'
+                )
+              ),
+              _react2['default'].createElement(
+                'select',
+                {
+                  className: 'select-options',
+                  onChange: function () {
+                    function onChange(event) {
+                      return _this2.setState({ value: event.target.value });
+                    }
 
-                                        return onChange;
-                                    }(),
-                                    value: this.state.value },
-                                Object.keys(stringMethods).map(function (method, index) {
-                                    return _react2['default'].createElement(
-                                        'option',
-                                        { key: index, className: 'options', value: method },
-                                        method
-                                    );
-                                })
-                            )
-                        ),
-                        _react2['default'].createElement(
-                            'div',
-                            null,
-                            _react2['default'].createElement(
-                                'button',
-                                { className: 'btn-result', onClick: this.handleClick },
-                                'Get Result'
-                            )
-                        )
-                    ),
-                    _react2['default'].createElement(_Result.Result, { value: this.state.response })
-                );
-            }
+                    return onChange;
+                  }(),
+                  value: this.state.value
+                },
+                Object.keys(stringMethods).map(function (method, index) {
+                  return _react2['default'].createElement(
+                    'option',
+                    { key: index, className: 'options', value: method },
+                    method
+                  );
+                })
+              )
+            ),
+            _react2['default'].createElement(
+              'div',
+              null,
+              _react2['default'].createElement(
+                'button',
+                { className: 'btn-result', onClick: this.handleClick },
+                'Get Result'
+              )
+            )
+          ),
+          _react2['default'].createElement(_Result2['default'], { value: this.state.response })
+        );
+      }
 
-            return render;
-        }()
-    }]);
+      return render;
+    }()
+  }]);
 
-    return Methods;
+  return Methods;
 }(_react2['default'].Component);
 
+exports['default'] = Methods;
+
 /***/ }),
-/* 31 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
 var wordCheck = function () {
-    function wordCheck(name) {
-        /*Check if the string is empty */
-        if (!name || name === "") {
-            return "Please add a string";
-        }
+  function wordCheck(name) {
+    /* Check if the string is empty */
+    if (!name || name === '') {
+      return 'Please add a string';
     }
+  }
 
-    return wordCheck;
+  return wordCheck;
 }();
 
 var hasVowels = function () {
-    function hasVowels(name) {
-        /*Checks if the string contains vowels*/
-        if (wordCheck(name) !== "Please add a string") {
-            var vowels = ['a', 'e', 'i', 'o', 'u'];
-            var nameSplit = name.split("");
-            var _iteratorNormalCompletion = true;
-            var _didIteratorError = false;
-            var _iteratorError = undefined;
+  function hasVowels(name) {
+    /* Checks if the string contains vowels */
+    if (wordCheck(name) !== 'Please add a string') {
+      var vowels = ['a', 'e', 'i', 'o', 'u'];
+      var nameSplit = name.split('');
+      var _iteratorNormalCompletion = true;
+      var _didIteratorError = false;
+      var _iteratorError = undefined;
 
-            try {
-                for (var _iterator = nameSplit[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-                    var word = _step.value;
-                    var _iteratorNormalCompletion2 = true;
-                    var _didIteratorError2 = false;
-                    var _iteratorError2 = undefined;
+      try {
+        for (var _iterator = nameSplit[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+          var word = _step.value;
+          var _iteratorNormalCompletion2 = true;
+          var _didIteratorError2 = false;
+          var _iteratorError2 = undefined;
 
-                    try {
-                        for (var _iterator2 = vowels[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
-                            var vowel = _step2.value;
+          try {
+            for (var _iterator2 = vowels[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+              var vowel = _step2.value;
 
-                            if (word === vowel) {
-                                return true;
-                            }
-                        }
-                    } catch (err) {
-                        _didIteratorError2 = true;
-                        _iteratorError2 = err;
-                    } finally {
-                        try {
-                            if (!_iteratorNormalCompletion2 && _iterator2["return"]) {
-                                _iterator2["return"]();
-                            }
-                        } finally {
-                            if (_didIteratorError2) {
-                                throw _iteratorError2;
-                            }
-                        }
-                    }
-                }
-            } catch (err) {
-                _didIteratorError = true;
-                _iteratorError = err;
-            } finally {
-                try {
-                    if (!_iteratorNormalCompletion && _iterator["return"]) {
-                        _iterator["return"]();
-                    }
-                } finally {
-                    if (_didIteratorError) {
-                        throw _iteratorError;
-                    }
-                }
+              if (word === vowel) {
+                return true;
+              }
             }
-
-            return false;
-        } else {
-            return wordCheck(name);
+          } catch (err) {
+            _didIteratorError2 = true;
+            _iteratorError2 = err;
+          } finally {
+            try {
+              if (!_iteratorNormalCompletion2 && _iterator2['return']) {
+                _iterator2['return']();
+              }
+            } finally {
+              if (_didIteratorError2) {
+                throw _iteratorError2;
+              }
+            }
+          }
         }
-    }
+      } catch (err) {
+        _didIteratorError = true;
+        _iteratorError = err;
+      } finally {
+        try {
+          if (!_iteratorNormalCompletion && _iterator['return']) {
+            _iterator['return']();
+          }
+        } finally {
+          if (_didIteratorError) {
+            throw _iteratorError;
+          }
+        }
+      }
 
-    return hasVowels;
+      return false;
+    }return wordCheck(name);
+  }
+
+  return hasVowels;
 }();
 
 var toUpper = function () {
-    function toUpper(name) {
-        /*Converts a string to uppercase */
-        if (wordCheck(name) !== "Please add a string") {
-            var newString = [];
-            var _iteratorNormalCompletion3 = true;
-            var _didIteratorError3 = false;
-            var _iteratorError3 = undefined;
+  function toUpper(name) {
+    /* Converts a string to uppercase */
+    if (wordCheck(name) !== 'Please add a string') {
+      var newString = [];
+      var _iteratorNormalCompletion3 = true;
+      var _didIteratorError3 = false;
+      var _iteratorError3 = undefined;
 
-            try {
-                for (var _iterator3 = name.split(" ")[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
-                    var word = _step3.value;
+      try {
+        for (var _iterator3 = name.split(' ')[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
+          var word = _step3.value;
 
-                    var resultVar = "";
-                    for (var i = 0; i < word.length; i++) {
-                        resultVar += String.fromCharCode(word.charCodeAt(i) & 223);
-                    }
-                    newString.push(resultVar);
-                }
-            } catch (err) {
-                _didIteratorError3 = true;
-                _iteratorError3 = err;
-            } finally {
-                try {
-                    if (!_iteratorNormalCompletion3 && _iterator3["return"]) {
-                        _iterator3["return"]();
-                    }
-                } finally {
-                    if (_didIteratorError3) {
-                        throw _iteratorError3;
-                    }
-                }
-            }
-
-            if (newString.join(" ") === name) {
-                return "String is already in uppercase";
-            } else {
-                return newString.join(" ");
-            }
-        } else {
-            return wordCheck(name);
+          var resultVar = '';
+          for (var i = 0; i < word.length; i++) {
+            resultVar += String.fromCharCode(word.charCodeAt(i) & 223);
+          }
+          newString.push(resultVar);
         }
-    }
+      } catch (err) {
+        _didIteratorError3 = true;
+        _iteratorError3 = err;
+      } finally {
+        try {
+          if (!_iteratorNormalCompletion3 && _iterator3['return']) {
+            _iterator3['return']();
+          }
+        } finally {
+          if (_didIteratorError3) {
+            throw _iteratorError3;
+          }
+        }
+      }
 
-    return toUpper;
+      if (newString.join(' ') === name) {
+        return 'String is already in uppercase';
+      }
+      return newString.join(' ');
+    }return wordCheck(name);
+  }
+
+  return toUpper;
 }();
 
 var toLower = function () {
-    function toLower(name) {
-        /*Converts a string to lowercase */
-        if (wordCheck(name) !== "Please add a string") {
-            var newString = [];
-            var _iteratorNormalCompletion4 = true;
-            var _didIteratorError4 = false;
-            var _iteratorError4 = undefined;
+  function toLower(name) {
+    /* Converts a string to lowercase */
+    if (wordCheck(name) !== 'Please add a string') {
+      var newString = [];
+      var _iteratorNormalCompletion4 = true;
+      var _didIteratorError4 = false;
+      var _iteratorError4 = undefined;
 
-            try {
-                for (var _iterator4 = name.split(" ")[Symbol.iterator](), _step4; !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {
-                    var word = _step4.value;
+      try {
+        for (var _iterator4 = name.split(' ')[Symbol.iterator](), _step4; !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {
+          var word = _step4.value;
 
-                    var resultVar = "";
-                    for (var i = 0; i < word.length; i++) {
-                        var code = word.charCodeAt(i);
-                        if (code > 64 && code < 91) {
-                            resultVar += String.fromCharCode(code + 32);
-                        } else {
-                            resultVar += word.charAt(i);
-                        }
-                    }
-                    newString.push(resultVar);
-                }
-            } catch (err) {
-                _didIteratorError4 = true;
-                _iteratorError4 = err;
-            } finally {
-                try {
-                    if (!_iteratorNormalCompletion4 && _iterator4["return"]) {
-                        _iterator4["return"]();
-                    }
-                } finally {
-                    if (_didIteratorError4) {
-                        throw _iteratorError4;
-                    }
-                }
-            }
-
-            if (newString.join(" ") === name) {
-                return "String already in lowercase";
+          var resultVar = '';
+          for (var i = 0; i < word.length; i++) {
+            var code = word.charCodeAt(i);
+            if (code > 64 && code < 91) {
+              resultVar += String.fromCharCode(code + 32);
             } else {
-                return newString.join(" ");
+              resultVar += word.charAt(i);
             }
-        } else {
-            return wordCheck(name);
+          }
+          newString.push(resultVar);
         }
-    }
+      } catch (err) {
+        _didIteratorError4 = true;
+        _iteratorError4 = err;
+      } finally {
+        try {
+          if (!_iteratorNormalCompletion4 && _iterator4['return']) {
+            _iterator4['return']();
+          }
+        } finally {
+          if (_didIteratorError4) {
+            throw _iteratorError4;
+          }
+        }
+      }
 
-    return toLower;
+      if (newString.join(' ') === name) {
+        return 'String already in lowercase';
+      }
+      return newString.join(' ');
+    }return wordCheck(name);
+  }
+
+  return toLower;
 }();
 
 var ucFirst = function () {
-    function ucFirst(name) {
-        /*Converts the first letter of a string to uppercase*/
-        if (wordCheck(name) !== "Please add a string") {
-            var splitName = name.charAt(0);
-            if (toUpper(splitName) !== "String is already in uppercase") {
-                return toUpper(splitName) + name.substr(1);
-            } else {
-                return "The first letter is already in uppercase";
-            }
-        }
+  function ucFirst(name) {
+    /* Converts the first letter of a string to uppercase */
+    if (wordCheck(name) !== 'Please add a string') {
+      var splitName = name.charAt(0);
+      if (toUpper(splitName) !== 'String is already in uppercase') {
+        return toUpper(splitName) + name.substr(1);
+      }return 'The first letter is already in uppercase';
     }
+  }
 
-    return ucFirst;
+  return ucFirst;
 }();
 
 var isQuestion = function () {
-    function isQuestion(name) {
-        /*Checks if string is a question */
-        if (wordCheck(name) !== "Please add a string") {
-            var splitString = name.split(" ");
-            if (name.slice(-1) === "?") {
-                return true;
-            } else {
-                return false;
-            }
-        } else {
-            return wordCheck(name);
-        }
-    }
+  function isQuestion(name) {
+    /* Checks if string is a question */
+    if (wordCheck(name) !== 'Please add a string') {
+      if (name.slice(-1) === '?') {
+        return true;
+      }
+      return false;
+    }return wordCheck(name);
+  }
 
-    return isQuestion;
+  return isQuestion;
 }();
 
 var isIn = function () {
-    function isIn(name) {
-        /*Returns a list of the words in the string, as an array */
-        if (wordCheck(name) !== "Please add a string") {
-            if (name instanceof Array) {
-                return "This is already an array";
-            } else {
-                var splitName = name.includes(" ") ? name.split(" ") : name;
-                return splitName;
-            }
-        } else {
-            return wordCheck(name);
-        }
-    }
+  function isIn(name) {
+    /* Returns a list of the words in the string, as an array */
+    if (wordCheck(name) !== 'Please add a string') {
+      if (name instanceof Array) {
+        return 'This is already an array';
+      }
+      var splitName = name.includes(' ') ? name.split(' ') : name;
+      return splitName;
+    }return wordCheck(name);
+  }
 
-    return isIn;
+  return isIn;
 }();
 
 var wordCount = function () {
-    function wordCount(name) {
-        /*Returns the number of words in the string */
-        if (wordCheck(name) !== "Please add a string") {
-            return name.split(" ").length;
-        }
+  function wordCount(name) {
+    /* Returns the number of words in the string */
+    if (wordCheck(name) !== 'Please add a string') {
+      return name.split(' ').length;
     }
+  }
 
-    return wordCount;
+  return wordCount;
 }();
 
 var toCurrency = function () {
-    function toCurrency(name) {
-        /*Returns a currency representation of the String */
-        if (wordCheck(name) !== "Please add a string") {
-            var currencyString = Number(name);
-            if (typeof currencyString === "number" && !isNaN(currencyString)) {
-                return currencyString.toLocaleString();
-            } else {
-                return "This is not a number";
-            }
-        } else {
-            return wordCheck(name);
-        }
-    }
+  function toCurrency(name) {
+    /* Returns a currency representation of the String */
+    if (wordCheck(name) !== 'Please add a string') {
+      var currencyString = Number(name);
+      if (typeof currencyString === 'number' && !isNaN(currencyString)) {
+        return currencyString.toLocaleString();
+      }
+      return 'This is not a number';
+    }return wordCheck(name);
+  }
 
-    return toCurrency;
+  return toCurrency;
 }();
 
 var fromCurrency = function () {
-    function fromCurrency(name) {
-        /*Returns a number representation of the Currency String */
-        if (wordCheck(name) !== "Please add a string") {
-            var currencyString = name.replace(/\,/g, '');
-            if (!isNaN(Number(currencyString))) {
-                return currencyString;
-            } else {
-                return "This is not a number";
-            }
-        } else {
-            return wordCheck(name);
-        }
-    }
+  function fromCurrency(name) {
+    /* Returns a number representation of the Currency String */
+    if (wordCheck(name) !== 'Please add a string') {
+      var currencyString = name.replace(/\,/g, '');
+      if (!isNaN(Number(currencyString))) {
+        return currencyString;
+      }
+      return 'This is not a number';
+    }return wordCheck(name);
+  }
 
-    return fromCurrency;
+  return fromCurrency;
 }();
 
 var inverseCase = function () {
-    function inverseCase(name) {
-        /*Returns each letter in the string as an inverse of its current case */
-        if (wordCheck(name) !== "Please add a string") {
-
-            var regexpUpper = /^[A-Z]/;
-            var splitString = name.split("");
-            var inverseString = splitString.map(function (word) {
-                if (regexpUpper.test(word) === true) {
-                    return word.toLowerCase();
-                } else {
-                    return word.toUpperCase();
-                }
-            });
-            return inverseString.join("");
-        } else {
-            return wordCheck(name);
+  function inverseCase(name) {
+    /* Returns each letter in the string as an inverse of its current case */
+    if (wordCheck(name) !== 'Please add a string') {
+      var regexpUpper = /^[A-Z]/;
+      var splitString = name.split('');
+      var inverseString = splitString.map(function (word) {
+        if (regexpUpper.test(word) === true) {
+          return word.toLowerCase();
         }
-    }
+        return word.toUpperCase();
+      });
+      return inverseString.join('');
+    }return wordCheck(name);
+  }
 
-    return inverseCase;
+  return inverseCase;
 }();
 
 var alternatingCase = function () {
-    function alternatingCase(name) {
-        /*Returns the letters in alternating cases */
-        if (wordCheck(name) !== "Please add a string") {
-            var words = name.toLowerCase().split("");
-            for (var index = 0; index < words.length; index += 2) {
-                words[index] = words[index].toUpperCase();
-            }
-            return words.join("");
-        } else {
-            return wordCheck(name);
-        }
-    }
+  function alternatingCase(name) {
+    /* Returns the letters in alternating cases */
+    if (wordCheck(name) !== 'Please add a string') {
+      var words = name.toLowerCase().split('');
+      for (var index = 0; index < words.length; index += 2) {
+        words[index] = words[index].toUpperCase();
+      }
+      return words.join('');
+    }return wordCheck(name);
+  }
 
-    return alternatingCase;
+  return alternatingCase;
 }();
 
 var getMiddle = function () {
-    function getMiddle(name) {
-        /*Returns the character(s) in the middle of the string */
-        if (wordCheck(name) !== "Please add a string") {
+  function getMiddle(name) {
+    /* Returns the character(s) in the middle of the string */
+    if (wordCheck(name) !== 'Please add a string') {
+      var position = void 0;
+      var length = void 0;
+      if (name.length % 2 === 1) {
+        position = name.length / 2;
+        length = 1;
+      } else {
+        position = name.length / 2 - 1;
+        length = 2;
+      }
+      var result = name.substring(position, position + length);
+      return result;
+    }return wordCheck(name);
+  }
 
-            var position = void 0;
-            var length = void 0;
-            if (name.length % 2 === 1) {
-                position = name.length / 2;
-                length = 1;
-            } else {
-                position = name.length / 2 - 1;
-                length = 2;
-            }
-            var result = name.substring(position, position + length);
-            return result;
-        } else {
-            return wordCheck(name);
-        }
-    }
-
-    return getMiddle;
+  return getMiddle;
 }();
 
 var numberWords = function () {
-    function numberWords(name) {
-        /*Returns the numbers in words */
-        if (wordCheck(name) !== "Please add a string") {
-            if (!isNaN(Number(name))) {
-                var numbers = { 0: "and", 1: "one", 2: "two", 3: "three", 4: "four",
-                    5: "five", 6: "six", 7: "seven", 8: "eight", 9: "nine" };
-                var splitNumber = name.toLocaleString().split(",");
-                var listNums = [];
-                for (var i = 0; i < splitNumber.length; i++) {
-                    var splitSubNums = splitNumber[i].split("");
-                    for (var ind = 0; ind < splitSubNums.length; ind++) {
-                        for (var key in numbers) {
-                            if (Number(splitSubNums[ind]) === Number(key)) {
-                                var newNum = numbers[key];
-                                listNums.push(newNum);
-                            }
-                        }
-                    }
-                }
-                return listNums.join(" ");
-            } else {
-                return "This is not a number";
+  function numberWords(name) {
+    /* Returns the numbers in words */
+    if (wordCheck(name) !== 'Please add a string') {
+      if (!isNaN(Number(name))) {
+        var numbers = {
+          0: 'and',
+          1: 'one',
+          2: 'two',
+          3: 'three',
+          4: 'four',
+          5: 'five',
+          6: 'six',
+          7: 'seven',
+          8: 'eight',
+          9: 'nine'
+        };
+        var splitNumber = name.toLocaleString().split(',');
+        var listNums = [];
+        for (var i = 0; i < splitNumber.length; i++) {
+          var splitSubNums = splitNumber[i].split('');
+          for (var ind = 0; ind < splitSubNums.length; ind++) {
+            for (var key in numbers) {
+              if (Number(splitSubNums[ind]) === Number(key)) {
+                var newNum = numbers[key];
+                listNums.push(newNum);
+              }
             }
-        } else {
-            return wordCheck(name);
+          }
         }
-    }
+        return listNums.join(' ');
+      }return 'This is not a number';
+    }return wordCheck(name);
+  }
 
-    return numberWords;
+  return numberWords;
 }();
 
 var isDigit = function () {
-    function isDigit(name) {
-        /*Returns true if the string is a digit */
-        if (wordCheck(name) !== "Please add a string") {
-            var splitName = name.split("");
-            if (splitName.length > 1) {
-                return false;
-            } else {
-                var _iteratorNormalCompletion5 = true;
-                var _didIteratorError5 = false;
-                var _iteratorError5 = undefined;
+  function isDigit(name) {
+    /* Returns true if the string is a digit */
+    if (wordCheck(name) !== 'Please add a string') {
+      var splitName = name.split('');
+      if (splitName.length > 1) {
+        return false;
+      }
+      var _iteratorNormalCompletion5 = true;
+      var _didIteratorError5 = false;
+      var _iteratorError5 = undefined;
 
-                try {
-                    for (var _iterator5 = splitName[Symbol.iterator](), _step5; !(_iteratorNormalCompletion5 = (_step5 = _iterator5.next()).done); _iteratorNormalCompletion5 = true) {
-                        var digit = _step5.value;
+      try {
+        for (var _iterator5 = splitName[Symbol.iterator](), _step5; !(_iteratorNormalCompletion5 = (_step5 = _iterator5.next()).done); _iteratorNormalCompletion5 = true) {
+          var digit = _step5.value;
 
-                        if (isNaN(Number(digit))) {
-                            return "This is not a number";
-                        } else {
-                            return true;
-                        }
-                    }
-                } catch (err) {
-                    _didIteratorError5 = true;
-                    _iteratorError5 = err;
-                } finally {
-                    try {
-                        if (!_iteratorNormalCompletion5 && _iterator5["return"]) {
-                            _iterator5["return"]();
-                        }
-                    } finally {
-                        if (_didIteratorError5) {
-                            throw _iteratorError5;
-                        }
-                    }
-                }
-            }
-        } else {
-            return wordCheck(name);
+          if (isNaN(Number(digit))) {
+            return 'This is not a number';
+          }
+          return true;
         }
+      } catch (err) {
+        _didIteratorError5 = true;
+        _iteratorError5 = err;
+      } finally {
+        try {
+          if (!_iteratorNormalCompletion5 && _iterator5['return']) {
+            _iterator5['return']();
+          }
+        } finally {
+          if (_didIteratorError5) {
+            throw _iteratorError5;
+          }
+        }
+      }
+    } else {
+      return wordCheck(name);
     }
+  }
 
-    return isDigit;
+  return isDigit;
 }();
 
 var doubleCheck = function () {
-    function doubleCheck(name) {
-        /*Checks for double characters in strings */
-        if (wordCheck(name) !== "Please add a string") {
-            if (name.match(/[^\w\s]|(.)(?=\1)/gi, "") !== null) {
-                return true;
-            } else {
-                return false;
-            }
-        } else {
-            return wordCheck(name);
-        }
-    }
+  function doubleCheck(name) {
+    /* Checks for double characters in strings */
+    if (wordCheck(name) !== 'Please add a string') {
+      if (name.match(/[^\w\s]|(.)(?=\1)/gi, '') !== null) {
+        return true;
+      }
 
-    return doubleCheck;
+      return false;
+    }return wordCheck(name);
+  }
+
+  return doubleCheck;
 }();
 
 exports.hasVowels = hasVowels;
@@ -9391,6 +9295,45 @@ exports.getMiddle = getMiddle;
 exports.numberWords = numberWords;
 exports.isDigit = isDigit;
 exports.doubleCheck = doubleCheck;
+
+/***/ }),
+/* 31 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports["default"] = Result;
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+function Result(props) {
+  return _react2["default"].createElement(
+    "div",
+    { className: "textarea-div" },
+    _react2["default"].createElement(
+      "div",
+      null,
+      _react2["default"].createElement(
+        "p",
+        null,
+        _react2["default"].createElement(
+          "b",
+          null,
+          "Result:"
+        )
+      )
+    ),
+    _react2["default"].createElement("textarea", { className: "text-area", rows: "10", value: props.value })
+  );
+}
 
 /***/ })
 /******/ ]);
