@@ -18,24 +18,24 @@ describe('<Methods />', () => {
     expect(wrapper.find('p')).to.have.length(2);
   });
 
-  it('Sets state of name', () => {
-    const wrapper = mount(<Methods />);
-    wrapper.setState({ name: 'test string' });
-    expect(wrapper.state().name).to.equal('test string');
-  });
+  // it('Sets state of name', () => {
+  //   const wrapper = mount(<Methods />);
+  //   wrapper.setState({ name: 'test string' });
+  //   expect(wrapper.state().name).to.equal('test string');
+  // });
 
-  it('Sets state of value', () => {
-    const wrapper = mount(<Methods />);
-    wrapper.setState({ value: 'hasVowel' });
-    expect(wrapper.state().value).to.equal('hasVowel');
-  });
+  // it('Sets state of value', () => {
+  //   const wrapper = mount(<Methods />);
+  //   wrapper.setState({ value: 'hasVowel' });
+  //   expect(wrapper.state().value).to.equal('hasVowel');
+  // });
 
-  it('Button sets method for response', () => {
-    const wrapper = mount(<Methods />);
-    wrapper.setState({ value: 'hasVowels' });
-    wrapper.setState({ name: 'test string' });
-    wrapper.find('button').simulate('click');
-    expect(wrapper.state().name).to.equal('test string');
-    expect(wrapper.state().response).to.equal('true');
-  });
+  // it('Button sets method for response', () => {
+  //   const wrapper = mount(<Methods />);
+  //   wrapper.setState({ value: 'hasVowels' });
+  //   wrapper.setState({ name: 'test string' });
+  //   wrapper.find('button').simulate('click');
+  //   expect(wrapper.state().name).to.equal('test string');
+  //   expect(wrapper.state().response).to.equal('true');
+  // });
 });
